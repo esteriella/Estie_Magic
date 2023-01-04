@@ -2,7 +2,7 @@ body{
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color:rgba(232, 232, 247, 0.925);
+    background-color:white;
 }
 
 /* Global */
@@ -19,12 +19,12 @@ ul{
 
 .button_1{
     height: 25px;
-    background: rgb(41, 143, 16);
+    background: rgb(25, 161, 25);
 }
 
 .dark{
     padding: 15px;
-    background: rgb(134, 14, 14);
+    background: rgb(134, 15, 15);
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -32,11 +32,11 @@ ul{
 
 /* Header */
 header{
-    background: rgb(134, 12, 12);
+    background: rgb(134, 15, 15);
     color: rgb(255, 251, 251);
     padding-top: 1%;
     min-height: 10%;
-    border-bottom:rgb(26, 179, 26) 3px solid;
+    border-bottom:rgb(25, 161, 25) 3px solid;
 }
 header a{
     color: white;
@@ -72,7 +72,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color: rgb(110, 211, 9);
+    color: rgb(25, 161, 25);
     font-weight: bold;
 }
 
@@ -86,8 +86,8 @@ header a:hover{
     min-height: 400px;
     background:url('../images/make\ up\ brushes.jpg') no-repeat 0 -400px;
     text-align: center;
-    color: rgb(79, 182, 11);
-    border-bottom:rgb(53, 168, 24) 3px solid;
+    color: rgb(25, 161, 25);
+    border-bottom:rgb(25, 161, 25) 3px solid;
 }
 
 #showcase h1{
@@ -106,7 +106,7 @@ margin-bottom: 10px;
     padding: 15px;
     color: #ffff;
     background: rgb(134, 15, 15);
-    border-bottom:rgb(60, 216, 60) 3px solid;
+    border-bottom:rgb(25, 161, 25) 3px solid;
 }
 
 #newsletter h1{
@@ -158,18 +158,44 @@ article#main-col{
 ul#Services li{
     list-style: none;
     padding:20px;
-    border:rgb(134, 12, 12) solid 1px;
+    border:rgb(134, 15, 15) solid 1px;
     margin-bottom:5px;
     background:rgb(182, 171, 171);
 }
-
-
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;}
+}
+header{
+    padding-bottom: 20px;
+}
+#showcase h1{
+    margin-top: 40px;
+}
+#newsletter button{
+    display:block;
+    width: 100%;
+}
+#newsletter form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+}
 footer{
     border-top:rgb(25, 161, 25) 3px solid;
     padding: 20px;
     margin-top: 20px;
     color: white;
     text-align: center;
-    background-color: maroon;
-   border-bottom:rgb(29, 163, 29) 3px solid;
+    background-color: rgb(134, 15, 15);
+   border-bottom:rgb(25, 161, 25) 3px solid;
 }
